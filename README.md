@@ -1,140 +1,107 @@
 # Employee Management System
 
-A backend Employee Management System being built using Spring Boot to learn and implement real-world backend development concepts progressively.
+## Project Overview
 
-The project starts with basic CRUD operations and will gradually evolve into a production-style backend application with authentication, validation, exception handling, documentation, and scalable architecture practices.
+Employee Management System is a backend REST API project built using Spring Boot.
 
----
-
-# Objective
-
-The main goal of this project is to gain hands-on experience with:
-
-- Spring Boot
-- REST APIs
+The main goal of this project is to learn and implement enterprise backend development concepts like:
 - Layered Architecture
+- Dependency Injection
+- REST APIs
 - Spring Data JPA
-- Database Integration
-- Validation
-- exception Handling
-- Authentication & Authorization
-- Backend Best Practices
+- Hibernate
+- MySQL Integration
 
-This project is being developed incrementally as part of the learning process.
+This project will evolve gradually as more Spring Boot concepts are learned.
 
 ---
 
 # Tech Stack
 
-- Java 21
+- Java
 - Spring Boot
-- Spring Web
 - Spring Data JPA
+- Hibernate
 - MySQL
 - Maven
 - Lombok
-- Validation API
 
 ---
 
 # Current Features
 
-- Project setup completed
-- Layered architecture planning
-- Dependency configuration
-
-Upcoming:
-- Employee CRUD APIs
-- Database integration
-- Validation
-- exception handling
+- MySQL Database Integration
+- Employee Entity Mapping
+- Repository Layer
+- Service Layer
+- Constructor Injection
+- Dependency Injection
+- Layered Architecture
 
 ---
 
 # Project Architecture
 
-The project follows Layered Architecture.
-
-```text
 Client
-   ↓
-controller Layer
-   ↓
-service Layer
-   ↓
-repository Layer
-   ↓
-Database
-```
-
-## Layers
-
-### controller
-Handles HTTP requests and responses.
-
-### service
-Contains business logic and application rules.
-
-### repository
-Handles database communication using Spring Data JPA.
-
-### entity
-Represents database tables as Java classes.
-
-### dto (Planned)
-Will be used for request and response transfer.
+→ Controller
+→ Service
+→ Repository
+→ MySQL Database
 
 ---
 
-# Planned Features
+# Current Project Structure
 
-- Employee CRUD APIs
-- dto implementation
-- Validation handling
-- Global exception handling
-- Pagination and sorting
-- Search APIs
-- Spring Security
+src/main/java
+
+- controller
+- service
+- repository
+- entity
+- dto (planned)
+- config (planned)
+- util (planned)
+
+---
+
+# Database Configuration
+
+Database: MySQL
+
+Schema:
+shiva
+
+---
+
+# How To Run
+
+1. Clone repository
+2. Configure MySQL database
+3. Update application.properties
+4. Run Spring Boot application
+
+Example:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/shiva
+
+---
+
+# Future Enhancements
+
+- REST CRUD APIs
+- DTO Layer
+- Validation
+- Exception Handling
 - JWT Authentication
-- Role-based authorization
-- Swagger/OpenAPI documentation
-- Docker support
-- Redis caching
-- Kafka integration
-- Microservices architecture
+- Pagination & Sorting
+- Docker Deployment
+- CI/CD
 
 ---
 
 # Learning Goals
 
-This project is intended to improve understanding of:
-
-- Backend request flow
-- Dependency Injection
-- REST API development
-- Database interaction using JPA
-- Clean code structure
-- Scalable backend architecture
-
----
-
-# Status
-
-Project is currently in the initial development phase.
-
-Day 1:
-- Spring Boot project initialized
-- Dependencies configured
-- Architecture planned
-
----
-
-# Author
-
-Developed as a learning-focused backend engineering project using Spring Boot.
-
-## Day 1:
-
-- Employee entity designed
-- Database table structure initialized
-- JPA entity mapping implemented
+- Understand Spring Boot architecture deeply
+- Learn enterprise backend development
+- Build production-style REST APIs
+- Practice layered architecture

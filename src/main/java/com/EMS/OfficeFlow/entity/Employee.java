@@ -1,4 +1,4 @@
-package entity;
+package com.EMS.OfficeFlow.entity;
 
 import jakarta.persistence.*;
 
@@ -8,13 +8,19 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private long id;
+
+    @Column(name = "firstName")
     private String firstName;
+    @Column(name = "lastName")
     private String lastName;
 
-    @Column(unique = true)
+    @Column(name = "email",unique = true)
     private String email;
+    @Column(name = "department")
     private String department;
+    @Column(name = "salary")
     private double salary;
 
     public Employee(long id, String firstName, String lastName, String email, String department, int salary) {

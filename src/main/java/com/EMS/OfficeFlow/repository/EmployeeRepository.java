@@ -1,6 +1,6 @@
-package repository;
+package com.EMS.OfficeFlow.repository;
 
-import entity.Employee;
+import com.EMS.OfficeFlow.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
